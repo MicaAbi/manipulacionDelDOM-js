@@ -1,17 +1,44 @@
 console.log('Hello Word');
 
+const users = [
+    {
+        userId: 0,
+        name: 'Walter',
+        lastName: 'White',
+        email: 'walter@gmail.com',
+        password: 'saymyname',
+    },
+    {
+        userId: 1,
+        name: 'Jesse',
+        lastName: 'Pinkman',
+        email: 'jesse@gmail.com',
+        password: 'jesse1234',
+    },
+    {
+        userId: 2,
+        name: 'Saul',
+        lastName: 'Goodman',
+        email: 'jimmy@gmail.com',
+        password: 'jimmy1234',
+    },
+]
+
+
 // GET USERS
-const getUsers = () => {
+const getUsers = (mockedUsers) => {
     const dataStorage = localStorage.getItem('users') 
 
     if(dataStorage) {
         return JSON.parse(dataStorage)
     } else {
-        return []
+        localStorage.setItem('users', JSON.stringify(mockedUsers))
+        return mockedUsers
     }
 }
 
-const arrayUsers = getUsers() 
+const arrayUsers = getUsers(users)
+
 
 // LOGIN
 
