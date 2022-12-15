@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="img-register-container">
+        <img class="img-register" src="./images/image-register.png" alt="Imagen de inicio de sesion">
+    </div>
+
+    <div class="main-wrapper">
+        <h2>Registrate</h2>
+    
+        <form class="form" id="register-form">
+            <p style="width: 100%;" id="error-field"></p>
+            <div class="form-field">
+                <input type="text" name="name" id="name-input" placeholder="Nombre">
+                <div class="error" id="error-name"></div>
+            </div>
+            <div class="form-field">
+                <input type="text" name="last-name" id="last-name-input" placeholder="Apellido">
+                <div class="error" id="error-last-name"></div>
+            </div>
+            <div class="form-field email">
+                <input type="email" name="email" id="email-input" placeholder="Correo electrónico">
+                <div class="error" id="error-email"></div>
+            </div>
+            <div class="form-field">
+                <input type="password" name="password" id="password-input" placeholder="Contraseña">
+                <div class="error" id="error-password"></div>
+            </div>
+            <div class="form-field">
+                <input type="password" name="password-repeat" id="password-repeat" placeholder="Repetir contraseña">
+                <div class="error" id="error-password-repeat"></div>
+            </div>
+            <div class="form-field email">
+                <p>La contraseña debe tener un mínimo de 8 caracteres alfanuméricos</p>
+            </div>
+            <button type="submit">Crear cuenta</button>
+            <div class="register-link">
+                <p>¿Ya tenés cuenta?</p>
+                <a href="./login.html">Ingresá</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="./register.js"></script>
+</body>
+</html>

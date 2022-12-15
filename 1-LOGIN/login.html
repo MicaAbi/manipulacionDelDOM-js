@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="img-login-container">
+        <img class="img-login" src="./images/image-login.png" alt="Imagen de inicio de sesion">
+    </div>
+    <div class="main-wrapper">
+        <h2>Iniciá sesión</h2>
+    
+        <form action="" class="form" id="login-form">
+            <p style="width: 100%;" id="error-field"></p>
+            <div class="form-field email">
+                <input type="email" name="email" id="email-login" placeholder="Correo electrónico">
+                <div class="error" id="error-email-login"></div>
+            </div>
+            <div class="form-field password">
+                <input type="password" name="password" id="password-login" placeholder="Contraseña">
+                <div class="error" id="error-password-login"></div>
+            </div>
+            <div class="form-field email">
+                <p>¿Olvidaste tu contraseña?</p>
+            </div>
+            <div id="errors"></div>
+            <button type="submit">Ingresar a la cuenta</button>
+            <div class="register-link">
+                <p>¿Aún no tenés cuenta?</p>
+                <a href="./register.html">Registrate</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44977cb181.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>App Tasks</title>
+</head>
+<body>
+    <div class="main-container">
+        <h3>Tareas</h3>
+
+        <section id="add-task">
+            <form action="" id="form-new-task">
+                <label for="task-title">Escribí la tarea que deseas crear</label>
+                <input type="text" name="task-title" id="task-title" placeholder="Agregar tarea">
+                <button type="submit" id="button-add-task">Agregar</button>
+            </form>
+        </section>
+
+        <section id="task-panel">
+            <div class="card" id="total-task">
+                <p>0</p>
+                <p>Total</p>
+            </div>
+            <div class="card" id="inprogress-task">
+                <p>0</p>
+                <p>En curso</p>
+            </div>
+            <div class="card" id="completed-task">
+                <p>0</p>
+                <p>Finalizadas</p>
+            </div>
+        </section>
+
+        <section id="tasks-list">
+
+        </section>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

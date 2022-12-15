@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(77, 73, 73);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 4rem;
+    font-size: 1.4rem;
+}
+
+.main-container {
+    padding: 6rem;
+    font-size: 1.4rem;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.home {
+    padding: 0rem;
+}
+
+.img-login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.img-register-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.img-login {
+    width: 45%;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.img-register {
+    width: 50%;
+    min-width: 250px;
+    max-width: 450px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.form-field {
+    width: 48%;
+    margin-bottom: 3rem;
+}
+
+.form-field.email {
+    width: 100%;
+}
+
+.form-field.password {
+    width: 100%;
+}
+
+.form input {
+    width: 100%;
+    height: 4.5rem;
+    border: rgb(167, 167, 167) 1px solid;
+    padding: 2rem;
+}
+
+
+.form button {
+    width: 100%;
+    height: 4.5rem;
+    background-color: rgb(140, 200, 160);
+    color: white;
+    border-radius: 0.8rem;
+    border: 0px;
+    margin-bottom: 3rem;
+}
+
+.form button:hover {
+    background-color: rgb(115, 174, 135);
+}
+
+.register-link {
+    display: flex;
+    gap: 1rem;
+}
+
+.error {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#error-field {
+    color: red;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    background-color: rgb(140, 200, 160);
+    height: 100px;
+    width: 100%;
+    padding: 3.2rem;
+}
+
+.container-fluid {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.user-img {
+    width: 50px;
+    padding: 0.8rem;
+}
+
+#sign-off {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+#sign-off:hover {
+    color: rgb(77, 73, 73);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) {
+
+    .form {
+        width: 60%;
+    }
+
+    .img-login-container {
+        margin-top: 0rem;
+    }
+}
