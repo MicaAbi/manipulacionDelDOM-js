@@ -61,7 +61,7 @@ const isEmail = (emailValue) => {
     return validationEmail
 }
 
-emailForm.addEventListener('focusout', (e) => {
+const emailValidation = () => {
     if(emailForm.value === '') {
         emailForm.style.border = '1.5px solid red'
         errorEmail.textContent = 'Debe completar con un email'
@@ -76,13 +76,14 @@ emailForm.addEventListener('focusout', (e) => {
         validations.email.error = false 
         validations.email.value = emailForm.value
     }
-})
+}
+emailForm.addEventListener('focusout', emailValidation)
 
 
 const passwordForm = document.querySelector('#password-login')
 const errorPassword = document.querySelector('#error-password-login')
 
-passwordForm.addEventListener('focusout', (e) => {
+const passwordValidation = () => {
     if(passwordForm.value === '') {
         passwordForm.style.border = '1.5px solid red'
         errorPassword.textContent = 'Este campo no puede estar vacío, introduce una contraseña'
@@ -97,7 +98,9 @@ passwordForm.addEventListener('focusout', (e) => {
         validations.password.error = false
         validations.password.value = passwordForm.value
     }
-})
+}
+
+passwordForm.addEventListener('focusout', passwordValidation)
 
 const loginForm = document.querySelector('#login-form')
 const errorLogin = document.querySelector('#error-field')
@@ -105,6 +108,8 @@ const errorLogin = document.querySelector('#error-field')
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
+    emailValidation()
+    passwordValidation()
     console.log(validations);
 
     if(validations.email.error || validations.password.error) {
